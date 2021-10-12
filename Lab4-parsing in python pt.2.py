@@ -133,8 +133,12 @@ print('')
 # Count most requested file 
 Counter = Counter(file_requests)
 most_freq = Counter.most_common(1)
+least_freq = Counter.most_common()[-1]
 print('The most requested file within the log file is: ')
 print(most_freq)
+print('')
+print('The least requested file within the log file is: ')
+print(least_freq)
 print('')
 
 # The count for the total amount of lines in the log file
